@@ -1,7 +1,7 @@
 # hull3d
 
 
-Our project implements the incremental 3d hull algorithm. This starts by creating a hull by making four faces using the first 4 points. Then it iterates through
+This project implements the incremental 3d hull algorithm. This starts by creating a hull by making four faces using the first 4 points. Then it iterates through
 the remaining points. For each point it determines if the point is inside the current hull, if it is it can be ignored, if it is outside we remove all the faces of the current hull that are visible from the point and reconnect the hull to this new point. This process repeats until all points have been considered, at which point the hull is complete and all faces are extreme.
 
 In order to run the code you simply provide hull3d with the number of points you wish to plot. Once you have run the hull3d program you can press 'c' to fill the hull faces with color and 'a' to animate the hull process so you can see the hull being built "incrementally".
